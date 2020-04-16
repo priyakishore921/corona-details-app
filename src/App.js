@@ -1,24 +1,19 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './Header/index';
-import WorldStats from './components/WorldStats/index';
 import Footer from './Footer/index';
+import Home from 'components/Home/index';
+import CountryWise from 'components/CountryWise/index';
 
 function App() {
   return (
     <div className="App">   
       <Header />
-      <div className="banner">
-        <h1>Don't be a covidiot </h1>
-        <span>- Steven Magee</span>
-        <span className="photo-courtesy"> 
-          Photo by Fusion Medical Animation on <a href="https://unsplash.com/s/photos/coronavirus"> Unsplash </a>
-        </span >
-      </div>
-      
-      <WorldStats />
-      
+      <Switch>
+        <Route path='/CountryWise' component={CountryWise} />
+        <Route path='/' component={Home}/>
+      </Switch>      
       <Footer />
     </div>
   );
