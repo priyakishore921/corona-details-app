@@ -2,6 +2,67 @@
   text-align: center;
 }
 
+.banner {
+  position : relative;
+  box-sizing: border-box;
+  background-image: url("assets/images/corona-right.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y : center;
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  height:400px;
+  color:red;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 100px;
+}
+
+.banner span {
+  margin-top:-20px;
+  color: white;
+}
+
+.banner span.photo-courtesy {
+  position : absolute;
+  bottom:0;
+  color: antiquewhite;
+  font-size: 10px;
+}
+
+.banner span > a {
+  color: antiquewhite
+}
+
+.head {
+  background-image : linear-gradient(to right, rgb(200, 119, 142) 10%, rgb(84, 175, 135) 45%, rgb(32,34,59) 65%);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.head ul {
+  list-style: none;
+}
+
+.head ul li {
+  display: inline;
+  margin-right: 50px;
+  color: aqua;
+}
+
+footer {
+  color : white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  /* background-color: rgb(44,36,57, 0.4); */
+  background-image: linear-gradient(to down, rgb(84,116,175) 10%, rgb(44,36,57, 0.4));
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
