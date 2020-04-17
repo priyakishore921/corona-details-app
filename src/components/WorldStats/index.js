@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './WorldStats.css';
 
 class WorldStats extends React.Component{
     
@@ -38,9 +39,9 @@ class WorldStats extends React.Component{
         // console.log("worldStats ", worldStats);
         return(
             <>
-            <h1>Current World Statistics</h1>
-            <h2>Statistic taken at : {worldStats.timeStamp}</h2>
-            <table>
+            <h1 className="customHead">Current World Statistics</h1>
+            <h2 className="customHead">Statistic taken at : {worldStats.timeStamp}</h2>
+            <table className="table myTable table-bordered">
                 <thead>
                     <tr>
                         {

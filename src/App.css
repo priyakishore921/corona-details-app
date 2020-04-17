@@ -37,12 +37,20 @@
 
 .head {
   background-image : linear-gradient(to right, rgb(200, 119, 142) 10%, rgb(84, 175, 135) 45%, rgb(32,34,59) 65%);
+  height : 100px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.head a {
+  color : wheat;
+  font-weight: 700;
+  font-size : 20px;
 }
 
-.head ul {
+/* .head ul {
   list-style: none;
 }
 
@@ -50,7 +58,7 @@
   display: inline;
   margin-right: 50px;
   color: aqua;
-}
+} */
 
 footer {
   color : white;

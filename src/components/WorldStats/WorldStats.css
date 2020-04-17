@@ -1,0 +1,11 @@
+.customHead, .myTable {
+    color : wheat;
+}
+
+.customHead {
+    margin : 10px;
+}
+
+.myTable {
+    margin : 20px 0 30px 0;
+}
