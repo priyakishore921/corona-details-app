@@ -50,15 +50,13 @@
   font-size : 20px;
 }
 
-/* .head ul {
-  list-style: none;
+.text-left {
+  text-align: left;
 }
 
-.head ul li {
-  display: inline;
-  margin-right: 50px;
-  color: aqua;
-} */
+.borderless {
+  border : none;
+}
 
 footer {
   color : white;
