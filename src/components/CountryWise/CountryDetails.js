@@ -1,4 +1,5 @@
 import React from 'react';
+import Graph from './HistoricalGraph';
 
 const CountryDetails = (props) => {
     return (
@@ -39,7 +40,7 @@ const CountryDetails = (props) => {
                         <td>{props.obj.total_recovered}</td>
                         <td>{props.obj.total_tests}</td>
                         <td>{props.obj.tests_per_1m_population}</td>
-                        <td></td>
+                        <td><Graph name={props.obj.country_name} thumbnail={true}/></td>
                     </tr>
                 </tbody>
             </table>

@@ -18,7 +18,7 @@ const TabularNumber = () => {
         getcountryStats();
     }, []);
 
-    console.log("countrieStats ", countrieStats);
+    // console.log("countrieStats ", countrieStats);
 
     return (
         <table className="table myTable borderless">
